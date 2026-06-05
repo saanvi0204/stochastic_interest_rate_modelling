@@ -1,8 +1,8 @@
-# Stochastic Interest Rate Modelling and Prediction
+# 📈📉 Stochastic Interest Rate Modelling and Prediction
+
+> This project implements and analyses the Cox–Ingersoll–Ross (CIR) stochastic interest rate model for yield curve modelling and prediction.
 
 ## Overview
-
-This project implements and analyses the Cox–Ingersoll–Ross (CIR) stochastic interest rate model for yield curve modelling and prediction.
 
 The goal is to calibrate CIR model parameters using Treasury yield data, reconstruct the term structure of interest rates, evaluate predictive performance across multiple maturities, and investigate extensions beyond the classical single-factor specification.
 
@@ -21,22 +21,22 @@ Key objectives include:
 
 The CIR model describes the evolution of the instantaneous short rate as:
 
-[
+$$
 dr_t = \kappa(\theta-r_t)dt + \sigma\sqrt{r_t},dW_t
-]
+$$
 
 where:
 
-* (\kappa) = mean reversion speed
-* (\theta) = long-run mean level
-* (\sigma) = volatility parameter
-* (W_t) = standard Brownian motion
+* $\kappa$ = mean reversion speed
+* $\theta$ = long-run mean level
+* $\sigma$ = volatility parameter
+* $W_t$ = standard Brownian motion
 
 A key advantage of the CIR model is that it preserves non-negative interest rates under the Feller condition:
 
-[
+$$
 2\kappa\theta \ge \sigma^2
-]
+$$
 
 ---
 
@@ -170,7 +170,7 @@ The classical CIR model has several practical limitations:
 │   ├── test_data.csv
 │   └── test_data_3M.csv
 │
-├── cir_model_final.ipynb
+├── cir_model.ipynb
 ├── requirements.txt
 └── README.md
 ```
@@ -182,8 +182,8 @@ The classical CIR model has several practical limitations:
 Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/saanvi0204/stochastic_interest_rate_modelling.git
+cd stochastic_interest_rate_modelling
 ```
 
 Install dependencies:
