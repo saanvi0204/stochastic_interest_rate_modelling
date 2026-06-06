@@ -96,9 +96,9 @@ Contains the 3-month Treasury yield used as a proxy for the instantaneous short 
 
 Parameters estimated using Exact Maximum Likelihood Estimation:
 
-* Mean reversion speed ((\kappa))
-* Long-run mean ((\theta))
-* Volatility ((\sigma))
+* Mean reversion speed ($\kappa$)
+* Long-run mean ($\theta$)
+* Volatility ($\sigma$)
 
 ### 5. Yield Curve Calibration
 
